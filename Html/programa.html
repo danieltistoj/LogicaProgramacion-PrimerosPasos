@@ -1,16 +1,21 @@
 <meta charset="UTF-8"/>
 
 <script>
+    //Simpre dejar nomenglaturas que se puedan entender en un futuro
+    function saltarLinea(){
+        document.write("<br/>");
+        document.write("<br/>");
+        document.write("<br/>");
+    }
     let anho = 2025
-    let saltoLinea = "<br/><br/>"
+    //let saltoLinea = "<br/><br/>"
     document.write("Juan tiene: " +(anho-2000) + " años");
-    document.write(saltoLinea)
-
+    saltarLinea()
     document.write("Pedro tiene: " +(anho-1995) + " años");
 
     anho = 2030
 
-    document.write(saltoLinea)
+    saltarLinea();
 
     document.write("Carlos tiene: " +(anho-2005)+ " años");
 
