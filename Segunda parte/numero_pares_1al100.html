@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA: NUMERO PARES DEL 1 AL 100</h1>
+<script>
+    function saltarLinea(){
+        document.write("<br/>");
+        document.write("<hr/>");
+    }
+    function imprimir(frase){
+        document.write("<big>"+frase+"</big>");
+        saltarLinea()
+        //document.write("<big> y <big/>");
+    }
+    var limite = parseInt(prompt("Ingrese el limite del contador"))
+
+    for(var i = 1; i <=100;i++){
+        if(i%2 ==0){
+            imprimir(i)
+        }
+
+    }
+    imprimir("<h3>Fin</h3>")
+
+</script>
