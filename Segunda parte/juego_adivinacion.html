@@ -1,0 +1,28 @@
+<meta charset="UTF-8"/>
+<h1>JUEGO DE ADIVINACIÓN</h1>
+<script>
+    //Simpre dejar nomenglaturas que se puedan entender en un futuro
+    function saltarLinea(){
+        document.write("<br/>");
+        document.write("<br/>");
+        document.write("<br/>");
+        document.write("<hr/>");
+    }
+    function imprimir(frase){
+        document.write("<big>"+frase+"</big>");
+        saltarLinea()
+        //document.write("<big> y <big/>");
+    }
+    let numeroPensado = Math.round(Math.random()*10)
+    let numeroIngresado = parseInt(prompt("Ingrese un numero"))
+
+    if(numeroIngresado == numeroPensado){
+        imprimir("Usted acerto")
+    }else{
+        imprimir("Usted fallo, el numero pensado era: "+numeroPensado)
+    }
+
+    
+   
+
+</script>
