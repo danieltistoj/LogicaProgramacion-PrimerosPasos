@@ -1,5 +1,5 @@
 <meta charset="UTF-8"/>
-<h1>CALCULO DE MUNDIALES</h1>
+<h1>PROGRAMA - CALCULAR TABLA DE MULTIPLICAR</h1>
 <script>
     //Simpre dejar nomenglaturas que se puedan entender en un futuro
     function saltarLinea(){
@@ -13,13 +13,15 @@
         saltarLinea()
         //document.write("<big> y <big/>");
     }
-
-    var anhoMundial =1930
-    var limite = parseInt(prompt("Ingrese un año limite"))
-
-    while(anhoMundial <= limite){
-        imprimir("Hubo mundial de la FIFA en el año: "+anhoMundial)
-        anhoMundial+=4
+    var numeroMultiplicar = parseInt(prompt("Ingrese el numero de la tabla que desea saber"))
+    var multiplicador = 1
+    imprimir("<h2>Con ciclo while</h2>")
+    while(multiplicador <= 10){
+        imprimir(numeroMultiplicar+" X "+multiplicador+" = "+(numeroMultiplicar*multiplicador))
+        multiplicador++
     }
-        imprimir("<h1>Fin</h1>")
+    imprimir("<h2>Con ciclo for</h2>")
+    for(var i = 1; i<=10;i++){
+        imprimir(numeroMultiplicar+" X "+i+" = "+(numeroMultiplicar*i))
+    }
 </script>
