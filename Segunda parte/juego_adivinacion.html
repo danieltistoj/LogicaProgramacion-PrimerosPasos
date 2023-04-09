@@ -13,7 +13,11 @@
         saltarLinea()
         //document.write("<big> y <big/>");
     }
-    let numeroPensado = Math.round(Math.random()*10)
+    function sorteo(numeroLimite){
+        return  (Math.round(Math.random() * numeroLimite))
+
+    }
+    let numeroPensado = sorteo(10)
     let numeroIngresado = parseInt(prompt("Ingrese un numero"))
 
     if(numeroIngresado == numeroPensado){

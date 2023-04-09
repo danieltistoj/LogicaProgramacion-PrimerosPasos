@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    function sorteo(numeroLimite){
+        return  (Math.round(Math.random() * numeroLimite))
+
+    }
+
+    var numeroLimite = parseInt(prompt("Ingrese un numero limite"))
+    var numeroPensado = sorteo(numeroLimite)
+    imprimir("Su numero de loteria es: "+ numeroPensado)
+</script>
