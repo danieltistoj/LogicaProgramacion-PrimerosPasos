@@ -23,5 +23,17 @@
     imc = calcularImc(peso, altura)
 
     imprimir(nombre + ", su imc calculado es: "+imc)
+    if(imc <18.5){
+        imprimir("IMC abajo de lo recomendado")
+    }
+    if(imc>=18.5 && imc<25){
+        imprimir("IMC esta dentro del intervalo normal")
+    }
+    if(imc>=25 && imc<30){
+        imprimir("IMC considerado como sobre peso")
+    }
+    if(imc>=30){
+        imprimir("IMC considerado como obesidad")
+    }
 
 </script>
