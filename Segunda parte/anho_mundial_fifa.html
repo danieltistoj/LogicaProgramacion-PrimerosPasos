@@ -1,0 +1,25 @@
+<meta charset="UTF-8"/>
+<h1>JUEGO DE ADIVINACIÓN</h1>
+<script>
+    //Simpre dejar nomenglaturas que se puedan entender en un futuro
+    function saltarLinea(){
+        document.write("<br/>");
+        document.write("<br/>");
+        document.write("<br/>");
+        document.write("<hr/>");
+    }
+    function imprimir(frase){
+        document.write("<big>"+frase+"</big>");
+        saltarLinea()
+        //document.write("<big> y <big/>");
+    }
+
+    var anhoMundial =1930
+    var limite = parseInt(prompt("Ingrese un año limite"))
+
+    while(anhoMundial <= limite){
+        imprimir("Hubo mundial de la FIFA en el año: "+anhoMundial)
+        anhoMundial+=4
+    }
+        imprimir("<h1>Fin</h1>")
+</script>
