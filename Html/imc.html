@@ -16,9 +16,12 @@
     function calcularImc(peso, altura){
         return (peso / (altura * altura))
     }
+    nombre = prompt("Informe su nombre")
+    peso = prompt(nombre + ", informe su peso")
+    altura = prompt(nombre+", informe su altura")
 
-    imprimir("El promedio del imc calculado de Christian y Felipe es: "+(calcularImc(71,1.72)+calcularImc(75,1.73))/2)
-    imprimir("El promedio del imc calculado de Gabriela y Luisa es: "+(calcularImc(65,1.68)+calcularImc(55,1.60))/2)    
+    imc = calcularImc(peso, altura)
 
-   
+    imprimir(nombre + ", su imc calculado es: "+imc)
+
 </script>
