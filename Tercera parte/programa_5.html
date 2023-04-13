@@ -6,6 +6,9 @@
     pincel.fillRect(0, 0, 600, 400)
     var radio = 10
 
+    var xAleatorio
+    var yAleatorio
+
     function disenharCircunferencia(x,y,radio,color){
         pincel.fillStyle = color
         pincel.beginPath()
@@ -23,8 +26,31 @@
     function sortearPosicion(maximo){
         return Math.floor(Math.random()*maximo)
     }
-    xAleatorio = sortearPosicion(600)
-    yAleatorio = sortearPosicion(400)
-    disenhaObjetivo(xAleatorio, yAleatorio)
+
+    function actulizarPantalla(){
+        limpiarPantalla()
+        xAleatorio = sortearPosicion(600)
+        yAleatorio = sortearPosicion(400)
+        disenhaObjetivo(xAleatorio, yAleatorio)
+        
+    }
+    
+    setInterval(actulizarPantalla,1000)
+
+    function disparar(evento){
+        var x = evento.pageX - pantalla.offsetLeft
+        var y = evento.pageY -pantalla.offsetTop
+        if(
+            (x<xAleatorio + radio)&&
+            (x>xAleatorio-radio)&&
+            (y<yAleatorio+radio)&&
+            (y>yAleatorio-radio)
+        ){
+            alert("Tiro certero")
+        }
+        
+    }
+
+    pantalla.onclick = disparar
 
 </script>
