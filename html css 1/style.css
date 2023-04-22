@@ -1,6 +1,4 @@
-body {
-    background: #cccccc;
-}
+
 h1 {
     text-align: center;
 }
@@ -19,6 +17,15 @@ em strong{
 #banner{
     width: 100%;
     height: 400px;
+}
+.principal{
+    background: #cccccc;
+}
+.diferenciales{
+    background: #ffffff;
+}
+h2{
+    text-align: center;
 }
 .items{
     font-style: italic;
