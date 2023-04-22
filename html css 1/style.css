@@ -1,5 +1,8 @@
 
-h1 {
+.titulo-principal{
+    padding-left: 30px;
+}
+.titulo-centralizado{
     text-align: center;
 }
 
@@ -25,9 +28,6 @@ em strong{
 .diferenciales{
     background: #ffffff;
     padding: 30px;
-}
-h2{
-    text-align: center;
 }
 .items{
     font-style: italic;
