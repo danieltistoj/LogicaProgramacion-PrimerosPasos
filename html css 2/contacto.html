@@ -24,31 +24,27 @@
     <main>
         <form>
             <label for="nombreapellido">Nombre y Apellido</label>
-            <input type="text" id="nombreapellido">
+            <input type="text" id="nombreapellido" class="input-padron">
 
             <label for="email">Email</label>
-            <input type="text" id="email">
+            <input type="text" id="email" class="input-padron">
 
             <label for="phone">Telefono</label>
-            <input type="text" id="phone">
+            <input type="text" id="phone" class="input-padron">
 
             <label for="mensaje">Mensaje</label>
-            <textarea cols="70" rows="10" id="mensaje"></textarea>
+            <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
             <div>
                 <p>¿Como le gustaria que lo contactemos?</p>
-                <label for="mensaje-email">Email</label>
-                <input type="radio" name="contacto" id="mensaje-email" value="email">
-    
-                <label for="mensaje-phone">Telefono</label>
-                <input type="radio" name="contacto" id="mensaje-phone" value="phone">
-    
-                <label for="mensaje-whatsapp">Whatsapp</label>
-                <input type="radio" name="contacto" id="mensaje-whatspp" value="whatsapp">
-    
-                <label for="mensaje-whatspp">Email</label>
-                <input type="radio" name="contacto" id="mensaje-whatspp">
-
-                <label><input type="checkbox">¿Le gustaria recibir novedades de la Barberia Alura?</label>
+                <label for="mensaje-email"><input type="radio" name="contacto" id="mensaje-email" value="email">Email</label>
+                
+                <label for="mensaje-phone"><input type="radio" name="contacto" id="mensaje-phone" value="phone">Telefono</label>
+                
+                <label for="mensaje-whatsapp"> <input type="radio" name="contacto" id="mensaje-whatspp" value="whatsapp">Whatsapp</label>
+        
+                <label for="mensaje-whatspp"><input type="radio" name="contacto" id="mensaje-whatspp">Email</label>
+                
+                <label class="checkbox"><input type="checkbox">¿Le gustaria recibir novedades de la Barberia Alura?</label>
             </div>
             <input type="submit" value="Enviar Formulario">
         </form>
