@@ -24,15 +24,15 @@
     <main>
         <form>
             <label for="nombreapellido">Nombre y Apellido</label>
-            <input type="text" id="nombreapellido" class="input-padron">
+            <input type="text" id="nombreapellido" class="input-padron" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" class="input-padron">
+            <input type="email" id="email" class="input-padron" required placeholder="email@dominio.com">
 
             <label for="phone">Telefono</label>
-            <input type="tel" id="phone" class="input-padron">
+            <input type="tel" id="phone" class="input-padron" required placeholder="(XX) XXXX-XXXX">
 
-            <label for="mensaje">Mensaje</label>
+            <label for="mensaje">Mensaje</label required>
             <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
             <div>
                 <p>¿Como le gustaria que lo contactemos?</p>
@@ -40,9 +40,7 @@
                 
                 <label for="mensaje-phone"><input type="radio" name="contacto" id="mensaje-phone" value="phone">Telefono</label>
                 
-                <label for="mensaje-whatsapp"> <input type="radio" name="contacto" id="mensaje-whatspp" value="whatsapp">Whatsapp</label>
-        
-                <label for="mensaje-whatspp"><input type="radio" name="contacto" id="mensaje-whatspp">Email</label>
+                <label for="mensaje-whatsapp"> <input type="radio" name="contacto" id="mensaje-whatspp" value="whatsapp" checked>Whatsapp</label>        
                 
             </div>
             <div>
@@ -54,7 +52,7 @@
                 </select>
             </div>
 
-            <label class="checkbox"><input type="checkbox">¿Le gustaria recibir novedades de la Barberia Alura?</label>
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de la Barberia Alura?</label>
 
             <input type="submit" value="Enviar Formulario">
         </form>
