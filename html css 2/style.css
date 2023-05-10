@@ -164,6 +164,14 @@ td, th{
     margin: 0 20px 20px 0;
 }
 
+.mapa{
+    padding: 3em 0;
+}
+.mapa p{
+    text-align: center;
+    margin: 0 0 2em;
+}
+
 .imagenDiferenciales{
     width: 60%;
 }
