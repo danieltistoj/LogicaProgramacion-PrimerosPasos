@@ -205,6 +205,7 @@ td, th{
 }
 .imagen-diferenciales{
     width: 60%;
+    box-shadow: 10px 10px 30px 15px black;
 }
 
 .imagen-diferenciales:hover{
