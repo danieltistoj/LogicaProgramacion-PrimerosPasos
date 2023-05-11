@@ -78,10 +78,7 @@ footer{
     font-size: 13px;
     margin: 20px;
 }
-main{
-    width: 940px;
-    margin: 0 auto;
-}
+
 form label, form legend{
     display: block;
     font-size: 20px;
@@ -139,6 +136,13 @@ td, th{
     width: 100%;
 }
 
+.principal{
+    background: #FEFEFE;
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
 .titulo-principal{
     text-align: center;
     font-size: 2em;
@@ -166,10 +170,19 @@ td, th{
 
 .mapa{
     padding: 3em 0;
+    background: linear-gradient(#FEFEFE,#888888);
 }
 .mapa p{
     text-align: center;
     margin: 0 0 2em;
+}
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
 }
 .contenido-diferenciales{
     width: 640px;
